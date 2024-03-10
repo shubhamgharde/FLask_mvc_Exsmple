@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+          <center><h1>Update Employee Details</h1></center>
+
+
+<a href="/employee/">HOME</a>
+   <a href="/employee/list">BACK</a>
+          <br></br>
+          {{result}}       <!--expressionn syntax-->
+          <form action="/employee/update" method="POST">
+              Employee Id : <input type="text" name="empid" readonly value="{{employee.id}}"> <br><br>
+              Employee Firstname : <input type="text" name="empfnm" value="{{employee.f_name}}"> <br><br>
+              Employee Middlename : <input type="text" name="empmnm" value="{{employee.m_name}}"> <br><br>
+              Employee Lastname : <input type="text" name="emplnm" value="{{employee.l_name}}"> <br><br>
+              Employee Gender :
+
+
+
+              <input type="radio" value="M" name="gender" {% if employee.gender == 'M'%} checked {% endif %}>male
+              <input type="radio" value="F" name="gender" {% if employee.gender == 'F'%} checked {% endif %}>female <br><br>
+              Employee Age : <input type="text" name="empage" value="{{employee.age}}"> <br><br>
+              Employee Birthdate : <input type="text" name="empdob" value="{{employee.dob}}"> <br><br>
+              Employee Email : <input type="text" name="empmail" value="{{employee.email}}"> <br><br>
+              Employee Photo : <input type="text" name="empphoto" value="{{employee.photo}}"> <br><br>
+          <input type="submit">
+          </form>
+
+
+</body>
+</html>

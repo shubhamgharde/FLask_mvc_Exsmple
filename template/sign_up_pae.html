@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/flag.js"></script>
+    <title>Exercise</title>
+    <style>
+        h1{color:blue;}
+    </style>
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+    <form action="flag.html">
+
+        <input type="text" id="First Name" placeholder="Enter First Name" required><br><br>
+        <input type="text" id="Last Name" placeholder="Enter Last Name" required><br><br>
+        <input type="Email" id="Email" placeholder="Enter Email" required><br><br>
+        <input type="password" id="password" value="" placeholder="create password" required class="password">
+        <input type="checkbox" onclick="show()">Show Password<br><br>
+
+        <input type="password" id="create_password" placeholder="confirm password" required>
+        <input type="checkbox" onclick="show()">Show Password
+        <br> <br>
+
+        Date Of Birth:<input type="date" placeholder="Date Of Birth" required><br>
+
+    <h4>select gender:-</h4>
+
+    <label for="male">male</label>
+    <input type="radio" name="gender"  id="male" value="male" required>
+    <label for="female">female</label>
+    <input type="radio" name="gender"  id="female" value="female" required>
+    <label for="other">other</label>
+    <input type="radio" name="gender" id="other" value="other" required>
+    <br> <br>
+
+    <label for="country">country</label>
+    <select id="country">
+        <option value="India">India</option>
+        <option value="japan">Japan</option>
+        <option value="USA">USA</option>
+        <option value="china">China</option>
+        <option value="Koria">Koria</option>
+    </select><br>
+    <br>
+    Write About Yourself Below:-<br>
+    <textarea placeholder="Type here" minlength="15 word" title="minimum words length 15" required></textarea><br>
+    <br>
+    <input type="submit" onclick="alert('conform');" placeholder="submit">
+    </form>
+
+    <script>
+    function show()
+    {
+        var a = document.getElementById("password");
+        if (a.type == "password")
+        {
+        a.type = "text";
+        }
+        else
+        {
+        a.type = "password";
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../flask-basics/.idea/flask-basics.iml" filepath="$PROJECT_DIR$/../flask-basics/.idea/flask-basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flask-mvc-example/.idea/flask-mvc-example.iml" filepath="$PROJECT_DIR$/../flask-mvc-example/.idea/flask-mvc-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flask-mvc-example1.iml" filepath="$PROJECT_DIR$/.idea/flask-mvc-example1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flask-mvc-example2/.idea/flask-mvc-example2.iml" filepath="$PROJECT_DIR$/../flask-mvc-example2/.idea/flask-mvc-example2.iml" />
+    </modules>
+  </component>
+</project>
